@@ -1,0 +1,57 @@
+{% load static %}
+
+<h1 id="gallery-header" style="font-family:'Dancing Script'; text-align: center;"><b>Galerie</b></h1>
+
+<section class="gallery">
+    <div class="container">
+      <div class="grid">
+        <div class="photo-div column-xs-12 column-md-4">
+          <figure class="img-container">
+            <img class="container-img" src="{% static 'img/portrete.JPG' %}" />
+            <figcaption class="img-content">
+              <h2 class="title">Portrete</h2>
+            </figcaption>
+            <span class="img-content-hover">
+              <h2 class="title">Portrete</h2>
+            </span>
+          </figure>
+        </div>
+        <div class="photo-div column-xs-12 column-md-4">
+          <figure class="img-container">
+            <img class="container-img" src="{% static 'img/floare.jpg' %}" />
+            <figcaption class="img-content">
+              <h2 class="title">Natură</h2>
+            </figcaption>
+            <span class="img-content-hover">
+              <h2 class="title">Natură</h2>
+            </span>
+          </figure>
+        </div>
+        <div class="photo-div column-xs-12 column-md-4" position="absolute">
+          <figure class="img-container">
+            <img class="container-img" src="{% static 'img/product.jpg' %}" style="position:relative; margin-left:-35px"/>
+            <figcaption class="img-content">
+              <h2 class="title">Produse</h2>
+            </figcaption>
+            <span class="img-content-hover">
+              <h2 class="title">Produse</h2>
+            </span>
+          </figure>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<script type="text/javascript">
+    const imgContent = document.querySelectorAll('.img-content-hover');
+
+    function showImgContent(e) {
+        for(var i = 0; i < imgContent.length; i++) {
+            x = e.pageX;
+            y = e.pageY;
+            imgContent[i].style.transform = `translate3d(${x}px, ${y}px, 0)`;
+        }
+    };
+
+    document.addEventListener('mousemove', showImgContent);
+</script>

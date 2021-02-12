@@ -1,0 +1,53 @@
+#about-me {
+    padding-top: 50px;
+}
+
+.vl {
+    position:absolute;
+    height:500px;
+    left:30px;
+    border-left: 1px solid gray;
+}
+
+.about-text {
+    text-align: justify;
+}
+
+#about-img {
+    position: relative;
+    left: 10%2;
+    height: 75%;
+    width: 75%;
+    border-radius: 50px;
+}
+
+.about-header {
+    font-family: "Dancing Script";
+}
+
+.about-links {
+    display: inline-flex;
+}
+
+.fa {
+    width: 100px;
+}
+
+#about-me .container .row ul {
+    list-style-type: none;
+    position: relative;
+    left: -25px;
+}
+
+#about-me .container .row .about-links a i {
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    margin-right: 10px;
+    transition: all .3s;
+    color:lightslategrey;
+}
+
+#about-me .container .row .about-links a i:hover {
+    color:black;
+}

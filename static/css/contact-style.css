@@ -1,0 +1,17 @@
+#form_container {
+    width: 50%;
+    position: relative;
+    left: 25%;
+    margin-bottom: 50px;
+}
+
+#form_container label {
+    text-align: center;
+    font-weight: 700;
+}
+
+#contact_header {
+    font-family: "Dancing Script";
+    font-size: 72px;
+    text-align: center;
+}
