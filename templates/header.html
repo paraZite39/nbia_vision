@@ -4,7 +4,7 @@
     <img src="{% static 'img/sky.png' %}" id="sky" alt="">
     <img src="{% static 'img/dealuri.png' %}" id="hills" alt="">
     <img src="{% static 'img/flori.png' %}" id="flowers" alt="">
-    <h2 id="text">Bianca Neacșu</h2>
+    <h2 id="text" style="position:relative; bottom: 30px;">Bianca Neacșu</h2>
 </header>
 
 <script type="text/javascript">
@@ -15,8 +15,7 @@
 
     window.addEventListener('scroll', function(){
         var value = window.scrollY;
-        hills.style.top = -value * 0.15 + 'px';
-        flowers.style.top = (value * 0.035) + 400 + 'px';
-        text.style.top = value * 0.3 + 'px';
+        hills.style.top = value * 0.15 + 'px';
+        flowers.style.top = (value * 0.1) + 400 + 'px';
     })
 </script>
