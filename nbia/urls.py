@@ -7,7 +7,7 @@ from django.conf.urls.static import static
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', views.home),
-    path('<cat>/', views.get_category, name='photo_category'),
+    path('<cat>/', views.get_category),
 ]
 
 if settings.DEBUG:

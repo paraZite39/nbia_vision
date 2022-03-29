@@ -3,16 +3,17 @@
 <!DOCTYPE html>
 <html lang="en">
   {% include "head.html" %}
-  <h1>{{ category }} </h1>
   <body>
-  {% include "header.html" %}
-  
-  {% include "aboutme.html" %}
-  
-  {% include "home-gallery.html" %}
-  
-  {% include "contact.html" %}
-
-  {% include "scripts.html" %}
+	  <h1>Test</h1>
+	  <h1>Categorie: {{ category }} </h1>
+	  <div class="collection-grid">
+	  {% for collection in category.collections.all %}
+		<div class="collection-div">
+			<img class="collection-thumbnail" src={{collection.thumbnail.url}}/>
+			<p class="collection-title">{{collection.name}}</p>
+			<button><a href="">View more</a></button>
+		</div>
+	  {% endfor %}
+	  </div>
   </body>
 </html>

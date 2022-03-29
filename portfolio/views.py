@@ -1,16 +1,15 @@
 from django.shortcuts import render
-from .models import Image
+from .models import Image, Category
 
 def home(request):
     return render(request, "index.html")
 
 def get_category(request, cat):
-    photos = Image.objects.filter(category=cat)
+    category = Category.objects.get(name=cat)
 
     context = {
-            'category': cat,
-            'photos': photos
-        }
+            'category': category,
+    }
 
     return render(request, 'category.html', context)
 
